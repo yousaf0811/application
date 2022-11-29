@@ -13,17 +13,17 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" >
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <Link className="nav-link" to="/">Home </Link>
+                        <Link className="nav-link" exact to="/">Home </Link>
                     </li>
                     <li class="nav-item active">
-                        <Link className="nav-link" to="/about">About </Link>
+                        <Link className="nav-link" exact to="/about">About </Link>
                     </li>
                     <li class="nav-item active">
-                        <Link className="nav-link" to="/contact">Contact US </Link>
+                        <Link className="nav-link" exact to="/contact">Contact US </Link>
                     </li>
                 </ul>
             </div>
-
+            <Link className="btn btn-outline-light" to={"/adduser"}>Add User</Link>
             </div>
         </nav>
     )
